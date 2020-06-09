@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="width: 1000px; margin-left: auto; margin-right:auto ">
+            
+            <h1 align="center">Formulario de Arte</h1>
+            
+            <h3 align="left">Introduce los términos de búsqueda:</h3>
+             <form method="GET" action="agregarfuncionario.php" onsubmit="return false;">
+                <table cellspacing="25">
+                    
+                    <tr>
+                        <td><p>OBRA</p></td>
+                        <td align="center"><p>TIPO</p></td>
+                        <td><p>DISPONIBILIDAD</p></td>
+                        <td><p>ESTILO</p></td>
+                       
+                    </tr>
+                    
+                    
+                    <tr>
+                        
+                        <td>Titulo <input type="text" name="form_titulo" id="form_titulo"></td><br>
+                        <td><input type="checkbox" id="form_escultura"/> Escultura</td>
+                        <td><input type="radio" value="1" id="radio_museo" name="form_radiomuseo"/> Museo/Acceso público</td><br>
+                        <td>
+                            <select id="form_estilos">
+                                <option value="1">Clásico</option>
+                                <option value="2">Moderno</option>
+                                <option value="3">Contemporaneo</option>
+                                <option value="4">Premoderno</option>
+                                <option value="5">Abstracto</option>
+                            </select>    
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Autor <input type="text" name="form_autor" id="form_autor"></td><br>
+                        <td><input type="checkbox" id="form_arquitectura"/> Arquitectura</td>
+                        <td><input type="radio" value="1" id="radio_coleccion" name="form_radiocoleccionpriv"/> Colección privada</td><br>
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="checkbox" id="form_pintura"/> Pintura</td></td>
+                    </tr>
+                    
+            
+                    
+                </table>
+                 
+                <h3><p>Háganos saber sus sugerencias:</p></h3>
+                <textarea id="form_comentarios" placeholder="Escriba su comentario"></textarea>
+                <br><br><br>
+                
+                <input colspan="2" align="center" type="submit" value="Buscar"/>
+                  
+                
+            </form>
+            <br><br><br><br><br><br>
+   
+            
+        </div>
+    </body>
+</html>
